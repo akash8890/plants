@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <style>
+    .himg img{ width: 100%; }
+    .hicon{ font-size: 25px; }
+    a{ text-decoration: none; color: black; }
+    p{ font-size: 19px; }
+    .f a{ color: white; font-size: 30px; }
+    i:hover{color: pink;}
+    .lf{background: black;color: white;}
+    .lf a{color: white;}
+    .nothing123{position: fixed; z-index: +1;}
+    .gd{float:right;}
+  </style>
+</head>
+<body>
+  <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ header start $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<div class="container-fluid shadow">
+  <div class="row nothing123" style="background-color: white;">
+    <div class="col-lg-2 bg-secondary d-none d-lg-block himg">
+      <img src="imgs/Plant-arena.png">
+      </a>
+    </div>
+    <div class="col-lg-10">
+      <div class="row bg-dark d-none d-lg-flex">
+        <div class="col-lg-7 text-left text-white p-1">
+          <form class="d-flex" role="search">
+          <a class="text-danger px-3 hicon" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger" type="submit">Search</button>
+          </form>
+        </div>
+        <div class="col-lg-5 text-end">
+          <div class="d-inline-flex align-items-center pr-2">
+            <a class="text-danger p-2" href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
+            <a class="text-danger p-2" href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a> 
+            <a class="text-danger p-2" href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a> 
+            <a class="text-danger p-2" href="https://www.instagram.com/ak.official77/"><i class="fab fa-instagram"></i></a> 
+            <a class="text-danger p-2 me-1" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar col-12 navbar-expand-lg bg-white navbar-light ">
+        <a href="" class=" col-sm-2 col-3 navbar-brand d-block d-lg-none himg row">
+        <img src="imgs/Plant-arena.png">
+        </a>
+
+        <span class="col-6 d-block d-lg-none">
+         <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger me-2" type="submit">Search</button>
+          </form> 
+
+        </span>
+        
+        <button type="button" class="navbar-toggler me-2" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse col-12 justify-content-between  " id="navbarCollapse">
+          <div class="navbar-nav mr-auto px-2 h4">
+            <a href="plants.html" class="nav-item nav-link active px-3">Home</a> 
+            <a href="about.html" class="nav-item nav-link px-3">About</a>  
+            <a href="service.html" class="nav-item nav-link px-3">Service</a>
+            <div class="nav-item dropdown">
+              <a href="" class="nav-link dropdown-toggle px-3" data-bs-toggle="dropdown"  aria-expanded="false">Pages</a>
+              <div class="dropdown-menu rounded-0 m-0">
+                <a href="Pages indoor.html" class="dropdown-item">Indoor Plants</a> 
+                <a href="pages outdoor.html" class="dropdown-item">Outdoor Plants</a>
+              </div>
+            </div>
+            <a href="contect.html" class="nav-item nav-link px-3">Contact</a>
+          </div>
+          <a href="" class="btn btn-danger mr-3 me-2"data-bs-toggle="modal" data-bs-target="#myModal"><h6>log in</h6></a>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- ############################################# header end ############################################## -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ header login btn part start $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<div class="container">
+    <div class="row py-3 justify-content-center">
+      <div class="modal fade" id="myModal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="col-2 himg"><img src="imgs/Plant-arena.png"></span>
+              <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+            </div>
+            <div class="container col-11">
+              <div class="row justify-content-center">
+                <h4 class="modal-title mt-2">Log in</h4>
+                <form method="post">
+                  <input type="text" name="first name" placeholder="First name" class="col-5 mt-4 p-2">
+                  <input type="text" name="last name" placeholder="Last name" class="col-5 mt-4 p-2">
+                  <input type="number" name="number" placeholder="Mobile no." class="col-10 mt-4 p-2">
+                  <input type="email" name="email" placeholder="Email address" class="col-10 mt-4 p-2">
+                  <input type="password" name="password" placeholder="Password" class="col-10 mt-4 p-2">
+                  <input type="submit" name="submit" value="Log in" class="col-3 mt-4 p-2 mb-4 bg-danger text-white" data-bs-dismiss="modal">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ################################## header login btn part end ######################################## -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ slider start $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<div id="mycarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+    <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="4000">
+      <img src="imgs/slider (1).png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="imgs/slider (3).png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="imgs/slider (2).png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" data-bs-target="#mycarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" data-bs-target="#mycarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
+<!-- ########################################### slider end ############################################### -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ main stast $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-8 text-center justify-content-center mt-5 h1 d-none d-lg-flex">Buy Plants Online in Delhi NCR</div>
+    <div class="col-8 text-center justify-content-center mt-5 h4 d-block d-lg-none">Buy Plants Online in Delhi NCR</div>
+    <div class="col-8 text-center justify-content-center h3 d-none d-lg-flex text-secondary">---The Best Selection---</div>
+    <div class="col-8 text-center justify-content-center h6 d-block d-lg-none text-secondary">---The Best Selection---</div>
+  </div>
+</div>
+
+<div class="container-fluid px-5">
+  <div class="row">
+    <div class="col-md-3 col-sm-6 mt-4">
+      <a href="p1.html">
+      <div class="card">
+        <img src="./imgs/p1.jpg" class="card-img-top">
+        <div class="card-body">
+          <div class="text-decoration-line-through">₹1860</div>30%off
+          <h4 class="card-title">₹1299</h4>
+          <p class="cart-text">5 Best Indoor Plants Pack<br>And outdoor plants</p>
+        </div>
+      </div>
+      </a>
+    </div>
+    <div class="col-md-3 col-sm-6 mt-4">
+      <a href="p2.html">
+      <div class="card">
+        <img src="./imgs/p2.jpg" class="card-img-top">
+        <div class="card-body">
+          <div class="text-decoration-line-through">₹1173</div>23%off
+          <h4 class="card-title">₹899</h4>
+          <p class="cart-text">Set of 3 Outdoor Flowering Plants<br> for Beautiful Garden</p>
+        </div>
+      </div>
+      </a>
+    </div>
+    <div class="col-md-3 col-sm-6 mt-4">
+      <a href="p3.html">
+      <div class="card">
+        <img src="./imgs/p3.png" class="card-img-top">
+        <div class="card-body">
+          <div class="text-decoration-line-through">₹1560</div>36%off
+          <h4 class="card-title">₹799</h4>
+          <p class="cart-text">Plant Pack For Healthy<br> Home-Office</p>
+        </div>
+      </div>
+      </a>
+    </div>
+    <div class="col-md-3 col-sm-6 mt-4">
+      <a href="p4.html">
+      <div class="card">
+        <img src="./imgs/p4.jpg" class="card-img-top">
+        <div class="card-body">
+          <div class="text-decoration-line-through">₹2199</div>5%off
+          <h4 class="card-title">₹2089</h4>
+          <p class="cart-text">Beautiful Flower Garden in a <br>Balcony</p>
+        </div>
+      </div>
+      </a>
+    </div>
+    <div class="col-md-3 col-sm-6 mt-4">
+      <a href="p5.html">
+      <div class="card">
+        <img src="./imgs/p5.jpg" class="card-img-top">
+        <div class="card-body">
+          <div class="text-decoration-line-through">₹1435</div>34%off
+          <h4 class="card-title">₹749</h4>
+          <p class="cart-text">Top 4 Die Hard Succulents Pack<br>Outdoor plants</p>
+        </div>
+      </div>
+      </a>
+    </div>
+    <div class="col-md-3 col-sm-6 mt-4">
+      <a href="p6.html">
+      <div class="card">
+        <img src="./imgs/p6.jpg" class="card-img-top">
+        <div class="card-body">
+          <div class="text-decoration-line-through">₹1545</div>32%off
+          <h4 class="card-title">₹1049</h4>
+          <p class="cart-text">Top 5 Cute Succulents <br> Outdoor plants</p>
+        </div>
+      </div>
+      </a>
+    </div>
+    <div class="col-md-3 col-sm-6 mt-4">
+      <a href="p7.html">
+      <div class="card">
+        <img src="./imgs/p7.jpg" class="card-img-top">
+        <div class="card-body">
+          <div class="text-decoration-line-through">₹1036</div>23%off
+          <h4 class="card-title">₹799</h4>
+          <p class="cart-text">Low Maintenance Indoor <br>Plants for Home Decoration</p>
+        </div>
+      </div>
+      </a>
+    </div>
+    <div class="col-md-3 col-sm-6 mt-4">
+      <a href="p8.html">
+      <div class="card">
+        <img src="./imgs/p8.jpg" class="card-img-top">
+        <div class="card-body">
+          <div class="text-decoration-line-through">₹1768</div>35%off
+          <h4 class="card-title">₹1149</h4>
+          <p class="cart-text">Set of 2 Bonsai Looking<br> Grafted Adeniums</p>
+        </div>
+      </div>
+      </a>
+    </div>
+    <div class="col-md-3 col-sm-6 mt-4">
+      <div class="card" aria-hidden="true">
+       <img src="./imgs/pn.jpg" class="card-img-top">
+       <div class="card-body">
+         <h5 class="card-title placeholder-glow">
+         <span class="placeholder col-6"></span>
+         </h5>
+         <p class="card-text placeholder-glow">
+         <span class="placeholder col-7"></span>
+         <br>
+         <span class="placeholder col-4 py-3"></span>
+         <span class="placeholder col-8"></span>
+         <span class="placeholder col-4"></span>
+         </p>
+        </div>
+      </div>
+    </div><div class="col-md-3 col-sm-6 mt-4">
+      <div class="card" aria-hidden="true">
+       <img src="./imgs/pn.jpg" class="card-img-top">
+       <div class="card-body">
+         <h5 class="card-title placeholder-glow">
+         <span class="placeholder col-6"></span>
+         </h5>
+         <p class="card-text placeholder-glow">
+         <span class="placeholder col-7"></span>
+         <br>
+         <span class="placeholder col-4 py-3"></span>
+         <span class="placeholder col-8"></span>
+         <span class="placeholder col-4"></span>
+         </p>
+        </div>
+      </div>
+    </div><div class="col-md-3 col-sm-6 mt-4">
+      <div class="card" aria-hidden="true">
+       <img src="./imgs/pn.jpg" class="card-img-top">
+       <div class="card-body">
+         <h5 class="card-title placeholder-glow">
+         <span class="placeholder col-6"></span>
+         </h5>
+         <p class="card-text placeholder-glow">
+         <span class="placeholder col-7"></span>
+         <br>
+         <span class="placeholder col-4 py-3"></span>
+         <span class="placeholder col-8"></span>
+         <span class="placeholder col-4"></span>
+         </p>
+        </div>
+      </div>
+    </div><div class="col-md-3 col-sm-6 mt-4">
+      <div class="card" aria-hidden="true">
+       <img src="./imgs/pn.jpg" class="card-img-top">
+       <div class="card-body">
+         <h5 class="card-title placeholder-glow">
+         <span class="placeholder col-6"></span>
+         </h5>
+         <p class="card-text placeholder-glow">
+         <span class="placeholder col-7"></span>
+         <br>
+         <span class="placeholder col-4 py-3"></span>
+         <span class="placeholder col-8"></span>
+         <span class="placeholder col-4"></span>
+         </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="text-center mt-5">
+  <button class="btn btn-danger" type="button" disabled style="width: 200px; height: 50px;">
+  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...
+  </button>
+</div>
+
+<!-- ################################################ main end ###################################################### -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Q&A stast $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+
+<div class="container">
+<h2>About Summer Plants</h2><p>
+<p>Summer plants are not just adapted for summers, but some can also be planted in spring or fall. Most of them bloom year-round. Planting them adds a little colour to your once barren summer.</p>
+
+<p>Bougainvillea, marigold, roses, and zinnia are the popular varieties of summer plants. Along with them, there are ixora, euphorbia, 9o’clock plant, pentas, lily, geranium, dalia, gerbera in the list. A few others that fill the list are gulmohar, coconut tree, mango tree, etc.</p>
+
+<p>You only get summer for a few months out of the year, so make the most of it by transforming your house and garden into a full-fledged summer flower mecca while it lasts.</p>
+
+<p>Some of these plants like petunias and geraniums are frost-tender perennials, but they are also treated as annuals. So, they need frost protection at the time of winter. Most of the summer plants grow from their seeds, but they can produce their seedlings once they mature.</p>
+
+
+<p>Studies suggest that some of the plants that are grown in summer like marigold, bougainvillea, rose, etc., help check environmental pollution. They are modified to absorb these harmful chemicals and undergo a biochemical reaction to detox the body safely.</p>
+
+<p>Summers aren’t a pleasant and exciting time for everyone, especially with all the sweating and heat. The only thing that can help you escape from it is your garden. Your garden with green summer plants and bright flowers is the perfect therapy you need.</p>
+
+<p>NurseryLive brings you a wide assortment of summer plants used as ornamental plants or to beautify the cottage gardens. Smaller plants come with a Round Plastic Black Pot about 13 cm (5 in) in size. With proper sunlight, water, soil, temperature, and fertilizer, you can plant these growers in hanging baskets too.</p>
+
+<p>While a few need a proper set of instructions, the rest can be grown with low care and maintenance.</p>
+<hr class="mt-5 text-danger">
+<h2 class="py-3">FAQ</h2>
+<h4>How to grow summer plants in winter?</h4>
+In the winter reduce your watering and use warm water for plants because many plants are highly sensitive to cold air.
+
+<h4>How to save summer plants?</h4>
+<p>Plants should be placed near the air conditioner In the summer repot your plants Water your succulent plants on a regular basis Leave your plants outside in the middle of the day.</p>
+
+<h4>What to do with summer plants in winter?</h4>
+<p>Reduce your watering and use room temperature water for plants and keep your plants warm.</p>
+
+<h4>When can summer plants go outside?</h4>
+<p>When the temperature outside is constantly over 50 degrees it is acceptable to transfer your plants outside. Keep an eye on the weather forecast.</p>
+
+<h4>Where to buy summer plants?</h4>
+<p>You can explore and buy a wide variety of summer plants from nurserylive.</p>
+
+<h4>Which plants can be planted in summer?</h4>
+<p>Marigold Black-eyed Susan Aster Lantana Blanket Flower Verbena and a slew of other flowers are among them.</p>
+
+
+</div>
+
+<!-- ################################################ Q&A end ###################################################### -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ futer start $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<div class="container-fluid bg-dark">
+  <div class="container text-white">
+   <div class="row ">
+     <div class="col-md-4 f"><h4 class="py-4">About Us</h4>
+      <a href="about.html"><p>About Plant Arena<p></a>
+      <a href=""><p></p></a>
+      <a href=""><p></p></a>
+      <a href=""><p></p></a>
+     </div>
+     <div class="col-md-4 f"><h4 class="py-4">Follow Us</h4>
+            <a class="text-danger p-2 i" href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
+            <a class="text-danger p-2 i" href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a> 
+            <a class="text-danger p-2 i" href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a> 
+            <a class="text-danger p-2 i" href="https://www.instagram.com/ak.official77/"><i class="fab fa-instagram"></i></a> 
+            <a class="text-danger p-2 i" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a> 
+     </div>
+     <div class="col-md-4 f"><h4 class="py-4">Subscribe</h4>
+      <p>Join us to receive gardening tips, offers, news & more</p>
+      <form method="post">
+       <input type="email" name="t1" placeholder="Enter Your Email" style="width: 280px; height: 60px;"class="rounded">
+       <input type="submit" name="submit" value="Sign up" style="width: 100px; height: 60px;" class="rounded bg-danger">
+      </form>
+
+     </div>
+    </div>
+  </div>
+</div>
+<!-- ################################################ futer end #################################################### -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ last futer start $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<div class="container-fluid lf">
+  <div class="container text-white py-4">
+    <div class="row">
+      <div class="col-md-6">© 2020 <a href="plants.html" class="text-danger">Plants Arena</a> . All Rights Reserved
+      </div>
+      <div class="col-md-6 text-end ">
+        |<a href="plants.html">Home</a>
+        |<a href="about.html">About</a>
+        |<a href="contect.html">Contect</a>
+        |<a href="service.html">Service</a>|
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ############################################## last futer end ################################################# -->
+</body>
+</html>
+  
